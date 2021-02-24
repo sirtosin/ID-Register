@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width
+    , initial-scale=1.0">
+       <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>ID Register</title>
+</head>
+<body> 
+
+    <main class="container center">
+        <!--id registration-->
+        <h1>ID Registration</h1>
+        <form action="#" id="form-id">
+            <div class="input-field">
+                <input type="text" id="name" required>
+                <label for="name">Full Name</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="dept" required>
+                <label for="dept">Department</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="level" required>
+                <label for="level">Level</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="num" placeholder="ID-yt (your three digits)" required>
+                <label for="num">ID number</label>               
+                <span class="invalid-feedback"></span>
+            </div>
+            
+            <button type="submit" onclick="inUse()" class="btn btn-large waves-effect">Generate ID</button>
+        </form>
+        <br>
+        <!--id details-->
+        <table>
+            <thead>
+                <td>Name</td>
+                <td>Department</td>
+                <td>Level</td>
+                <td>ID Number</td>
+            </thead>
+            <tbody id="details"></tbody>
+        </table>
+        <br>
+        <h3>Find my Details</h3>
+        <form action="#" id="find">
+            <div class="input-field">
+                <input type="text" id="num2" placeholder="ID-yt (your three digits)">
+                <label for="num2">ID number</label>
+            </div>
+            <button type="submit" class="btn btn-large waves-effect">Find Me</button>
+        
+        </form>
+        <table>
+            <thead>
+                <td>Name</td>
+                <td>Department</td>
+                <td>Level</td>
+                <td>ID Number</td>
+            </thead>
+            <tbody id="details2"></tbody>
+        </table>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+    <script src="/js/app3.js"></script>
+</body>
+</html>
